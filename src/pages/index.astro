@@ -1,11 +1,23 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Base from "../layouts/Base.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import { getCollection } from "astro:content";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const projects = (await getCollection("projects"))
+  .sort((a,b)=> (b.data.order ?? 0) - (a.data.order ?? 0));
 ---
-
-<Layout>
-	<Welcome />
-</Layout>
+<Base title="Hyunju Kim — Projects">
+  <h1>Projects</h1>
+  <p class="lead">Selected academic and research works exploring micro-habitats, ecological archives, and climate-driven design.</p>
+  <section class="projects-grid">
+    {projects.map((p)=> (
+      <ProjectCard
+        href={`/projects/${p.slug}/`}
+        title={p.data.title}
+        year={String(p.data.year)}
+        summary={p.data.summary}
+        cover={p.data.cover}
+      />
+    ))}
+  </section>
+</Base>

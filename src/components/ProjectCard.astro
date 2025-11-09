@@ -1,0 +1,20 @@
+---
+export interface Props {
+  href: string;
+  title: string;
+  year?: string | number;
+  summary?: string;
+  cover: string;
+}
+const { href, title, year, summary, cover } = Astro.props as Props;
+---
+<a class="card" href={href}>
+  <figure>
+    <img src={cover} alt={title} loading="lazy" />
+  </figure>
+  <div class="meta">
+    <h3>{title}</h3>
+    {year && <span class="year">{year}</span>}
+  </div>
+  {summary && <p>{summary}</p>}
+</a>

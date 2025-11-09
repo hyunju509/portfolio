@@ -1,0 +1,27 @@
+---
+import "../styles/global.css";
+const { title = 'Hyunju Kim — Architecture Portfolio' } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="brand" href="/">HYUNJU KIM</a>
+        <nav>
+          <a href="/">Projects</a>
+          <a href="/about">About</a>
+          <a href="/cv">CV</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <slot />
+    </main>
+    <footer class="site-footer"><div class="inner">© {new Date().getFullYear()} Hyunju Kim</div></footer>
+  </body>
+</html>
