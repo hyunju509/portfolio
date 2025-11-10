@@ -11,11 +11,11 @@ const { title = 'Hyunju Kim — Architecture Portfolio' } = Astro.props;
   <body>
     <header class="site-header">
       <div class="inner">
-        <a class="brand" href="/">HYUNJU KIM</a>
+        <a class="brand" href={import.meta.env.BASE_URL}>HYUNJU KIM</a>
         <nav>
-          <a href="/">Projects</a>
-          <a href="/about">About</a>
-          <a href="/cv">CV</a>
+          <a href={`${import.meta.env.BASE_URL}`}>Projects</a>
+          <a href={`${import.meta.env.BASE_URL}about`}>About</a>
+          <a href={`${import.meta.env.BASE_URL}cv`}>CV</a>
         </nav>
       </div>
     </header>

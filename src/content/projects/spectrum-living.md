@@ -9,7 +9,7 @@ cover: "src/assets/projects/spectrum-living/main.png"
 gallery:
   - "src/assets/projects/spectrum-living/main.png"
   - "src/assets/projects/spectrum-living/02.webp"
-order: 10
+order: 8
 ---
 
 The project explores the **nature and imagination of dreams** and proposes a new museum typology redefining the relationship between reality and surrealism.  

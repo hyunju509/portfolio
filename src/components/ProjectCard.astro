@@ -7,8 +7,9 @@ export interface Props {
   cover: string;
 }
 const { href, title, year, summary, cover } = Astro.props as Props;
+const to = href.startsWith('http') ? href : `${import.meta.env.BASE_URL}${href.replace(/^\//,'')}`;
 ---
-<a class="card" href={href}>
+<a class="card" href={to}>
   <figure>
     <img src={cover} alt={title} loading="lazy" />
   </figure>

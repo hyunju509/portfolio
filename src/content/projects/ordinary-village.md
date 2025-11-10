@@ -9,7 +9,7 @@ cover: "src/assets/projects/ordinary-village/main.png"
 gallery:
   - "src/assets/projects/ordinary-village/main.png"
   - "src/assets/projects/ordinary-village/02.webp"
-order: 10
+order: 9
 ---
 
 The project explores the **nature and imagination of dreams** and proposes a new museum typology redefining the relationship between reality and surrealism.  

@@ -72,6 +72,41 @@ h1{font-size:clamp(26px,2.8vw,40px);line-height:1.25;margin:0 0 18px; font-weigh
 .prose h1, .prose h2 { font-weight: 500; letter-spacing: -0.02em; }
 .prose ul { list-style: none; padding-left: 0; }
 .prose li { margin-bottom: 4px; }
+.edu-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* ✅ 이 줄 추가! 날짜를 상단 정렬 */
+  gap: 16px;
+  padding: 6px 0 10px;
+}
+.edu-date {
+  white-space: nowrap;
+  color: var(--muted);
+  font-size: .95rem;
+  margin-left: 20px; /* ✅ 살짝 여백 추가 */
+}
+.cv .hl{
+  position: relative;        /* anchor for highlight */
+  display: inline-block;     /* shrink underline width to text */
+  padding: 0 6px;            /* small side padding */
+  z-index: 0;                /* create stacking context so ::after can sit behind */
+}
+.cv .hl::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.12em;
+  height: 0.58em;
+  background: rgba(179, 202, 226, 0.45); /* light blue highlight */
+  border-radius: 3px;
+  z-index: -1;
+}
+
+.cv-compact .edu-list li {
+  line-height: 1.55; /* 1.45 ~ 1.65 사이로 미세 조정 */
+  padding: 6px 0;    /* 4~8px 사이로 조절 */
+}
 
 /* About essay typography */
 .prose {
@@ -96,4 +131,45 @@ h1{font-size:clamp(26px,2.8vw,40px);line-height:1.25;margin:0 0 18px; font-weigh
 .prose span.blue {
   color: #336ab2; /* elegant deep blue similar to SHIFTOPIA sample */
   font-weight: 500;
+}
+
+/* project pages */
+
+.project-page {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.summary {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.images img {
+  width: 100%;
+  border-radius: 4px;
+  margin: 2rem 0;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+p {
+  margin-bottom: 1rem;
 }

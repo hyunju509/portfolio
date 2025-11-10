@@ -1,4 +1,7 @@
 import { defineConfig } from 'astro/config';
+
 export default defineConfig({
-  site: 'https://hyunju509.github.io/portfolio', // 프로젝트 페이지 URL
+  site: 'https://hyunju509.github.io/portfolio',
+  base: '/portfolio/',
+  outDir: './docs',   // ← Pages가 읽을 폴더
 });

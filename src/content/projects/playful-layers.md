@@ -9,7 +9,7 @@ cover: "src/assets/projects/playful-layers/main.png"
 gallery:
   - "src/assets/projects/playful-layers/main.png"
   - "src/assets/projects/playful-layers/02.webp"
-order: 10
+order: 7
 ---
 
 The project explores the **nature and imagination of dreams** and proposes a new museum typology redefining the relationship between reality and surrealism.  
