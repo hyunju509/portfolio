@@ -5,10 +5,10 @@ location: Seoul, South Korea
 role: Individual
 tags: ["academic", "museum", "interactive facade", "surrealism"]
 summary: "Interactive Living Spaces: Redefining Relationships through Dynamic Design"
-cover: "src/assets/projects/ordinary-village/main.png"
+cover: "/assets/projects/ordinary-village/main.png"
 gallery:
-  - "src/assets/projects/ordinary-village/main.png"
-  - "src/assets/projects/ordinary-village/02.webp"
+  - "/assets/projects/ordinary-village/main.png"
+  - "/assets/projects/ordinary-village/02.webp"
 order: 9
 ---
 

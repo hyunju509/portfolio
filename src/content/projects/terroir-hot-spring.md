@@ -5,10 +5,10 @@ location: New York, United States
 role: Individual
 tags: ["academic", "museum", "interactive facade", "surrealism"]
 summary: "Dreams, though largely unexplored, offer valuable clues to understanding the subconscious and brain activity."
-cover: "src/assets/projects/terroir-hot-spring/main.png"
+cover: "/assets/projects/terroir-hot-spring/main.png"
 gallery:
-  - "src/assets/projects/terroir-hot-spring/main.png"
-  - "src/assets/projects/terroir-hot-spring/02.webp"
+  - "/assets/projects/terroir-hot-spring/main.png"
+  - "/assets/projects/terroir-hot-spring/02.webp"
 order: 6
 ---
 
