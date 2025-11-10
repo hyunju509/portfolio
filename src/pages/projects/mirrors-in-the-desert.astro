@@ -13,7 +13,19 @@ import Base from "../../layouts/Base.astro";
     </section>
 
     <section class="images">
-      <img src="/assets/projects/mirrors-in-the-desert/main.png" alt="Mirrors in the Desert main image" />
+      <img src={`${import.meta.env.BASE_URL}assets/projects/mirrors-in-the-desert/main.png`} alt="Mirrors in the Desert main image" />
+    </section>
+
+    <section class="links">
+      <h2>External Links</h2>
+      <div class="project-links">
+        <a href="https://www.arch.columbia.edu/student-work/13606-mirrors-in-the-desert" target="_blank" class="external-link">Columbia GSAPP — Student Work Archive ↗</a>
+      </div>
+      <div class="video-thumbnail">
+        <a href="https://youtu.be/fZWpxhrROCA?si=acpD9L5RrOtdAMaS" target="_blank">
+          <img src="https://img.youtube.com/vi/fZWpxhrROCA/hqdefault.jpg" alt="Watch project video on YouTube" />
+        </a>
+      </div>
     </section>
 
     <section class="description">
@@ -27,3 +39,29 @@ import Base from "../../layouts/Base.astro";
     </section>
   </main>
 </Base>
+
+<style>
+  .links {
+    margin: 2.5rem 0;
+  }
+  .links h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .external-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--link-color, #004aad);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .external-link:hover {
+    text-decoration: underline;
+  }
+  .video-thumbnail img {
+    width: 100%;
+    max-width: 560px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+</style>

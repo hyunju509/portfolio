@@ -5,10 +5,10 @@ location: New York, United States
 role: Individual
 tags: ["academic", "museum", "interactive facade", "surrealism"]
 summary: "Dreams, though largely unexplored, offer valuable clues to understanding the subconscious and brain activity."
-cover: "/assets/projects/playful-layers/main.png"
+cover: "public/assets/projects/playful-layers/main.png"
 gallery:
-  - "/assets/projects/playful-layers/main.png"
-  - "/assets/projects/playful-layers/02.webp"
+  - "public/assets/projects/playful-layers/main.png"
+  - "public/assets/projects/playful-layers/02.webp"
 order: 7
 ---
 

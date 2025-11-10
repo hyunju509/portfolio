@@ -5,10 +5,10 @@ location: Ivanpah, United States
 role: Individual
 tags: ["academic", "museum", "interactive facade", "surrealism"]
 summary: "Dreams, though largely unexplored, offer valuable clues to understanding the subconscious and brain activity."
-cover: "/assets/projects/mirrors-in-the-desert/main.pdf"
+cover: "public/assets/projects/mirrors-in-the-desert/main.png"
 gallery:
-  - "/assets/projects/mirrors-in-the-desert/main.png"
-  - "/assets/projects/mirrors-in-the-desert/02.webp"
+  - "public/assets/projects/mirrors-in-the-desert/main.png"
+  - "public/assets/projects/mirrors-in-the-desert/02.webp"
 order: 11
 ---
 
@@ -19,4 +19,4 @@ Through its **interactive facade**, the tower transforms into a medium of percep
 The experience enables visitors to explore **memorable, dream-like experiences** beyond their daily lives — offering psychological escape and stimulating creativity.
 
 **Semester 1, 2024 — School of Architecture at Kookmin University**  
-Led by Prof. Dongyul Kim  
+Led by Prof. Dongyul Kim 
